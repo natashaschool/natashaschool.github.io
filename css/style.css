@@ -767,9 +767,17 @@ a.service-btn:hover,
     -ms-background-size: cover;
 }
 
+.feedback-info-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
 .feedback-info p {
-    max-width: 700px;
-    margin: 0 auto;
+    max-width: 300px;
+    margin-left: 10px;
+    margin-right: 10px;
     line-height: 1.8;
     color: #e4e4e4;
 }
