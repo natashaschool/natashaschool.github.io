@@ -740,6 +740,11 @@ a.service-btn:hover,
     -ms-background-size: cover;
 }
 
+.feedback-info-img {
+    width: 100px;
+    height: 100px;
+}
+
 .team-content {
     padding: 3em 2em 0;
 }
