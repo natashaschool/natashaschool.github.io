@@ -558,6 +558,11 @@ li>a:only-child:after {
     letter-spacing: 4px;
 }
 
+.email-invalid {
+    display: none;
+    color: red;
+}
+
 /* //banner text */
 /* form */
 .home-form-w3ls .form-control {
