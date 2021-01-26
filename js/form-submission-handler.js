@@ -34,7 +34,6 @@ function postData(data, onCompletion) {
 function getFormData() {
   var form = document.getElementById("gform");
   var elements = form.elements; // all form elements
-  console.log(elements)
   var fields = Object.keys(elements).map(function(k) {
     if(elements[k].name !== undefined) {
       return elements[k].name;
@@ -45,7 +44,6 @@ function getFormData() {
   }).filter(function(item, pos, self) {
     return self.indexOf(item) == pos && item;
   });
-  console.log(fields)
   var data = {};
   fields.forEach(function(k) {
     data[k] = elements[k].value;
@@ -73,7 +71,6 @@ function getFormData() {
   data.formDataNameOrder = JSON.stringify(fields);
   data.formGoogleSheetName = form.dataset.sheet || "responses"; // default sheet name
   data.formGoogleSendEmail = form.dataset.email || ""; // no email by default
-  console.log(data);
   return data;
 }
 
